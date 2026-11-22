@@ -1,0 +1,10 @@
+po_number,vendor_id,po_date,status,currency,description,buyer_contact
+PO-4501,V001,2026-10-20,open,INR,Office supplies - Q4 replenishment,Priya Nair (Admin)
+PO-4502,V001,2026-11-02,open,INR,Printer consumables and stationery,Priya Nair (Admin)
+PO-4503,V002,2026-09-15,open,INR,Network switch rollout - 3 sites,Rahul Menon (IT)
+PO-4504,V003,2026-10-01,open,INR,Housekeeping and pest control - November,Anita Rao (Facilities)
+PO-4505,V003,2026-10-01,open,INR,Landscaping - Q4,Anita Rao (Facilities)
+PO-4506,V004,2026-11-01,open,INR,Line-haul freight BLR-MAA - November,Karthik S (Supply chain)
+PO-4507,V004,2026-10-05,open,INR,Line-haul freight BLR-HYD - October,Karthik S (Supply chain)
+PO-4508,V005,2026-10-25,open,INR,Corrugated shipper boxes,Karthik S (Supply chain)
+PO-4509,V001,2026-11-05,open,INR,Pantry supplies - November,Priya Nair (Admin)

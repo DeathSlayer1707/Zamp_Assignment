@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: invoice-desk
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/meta
+    envVars:
+      - key: STAGE_DELAY_MS
+        value: "450"
+      - key: LLM_PROVIDER        # anthropic | openai  (leave blank for rules-only)
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY      # also works with Gemini/Groq via OPENAI_BASE_URL
+        sync: false
+      - key: OPENAI_BASE_URL
+        sync: false
+      - key: OPENAI_MODEL
+        sync: false

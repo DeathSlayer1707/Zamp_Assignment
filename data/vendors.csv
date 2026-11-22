@@ -1,0 +1,6 @@
+vendor_id,name,aliases,gstin,state_code,city,status,status_reason,bank_name,bank_account,ifsc,payment_terms_days,contact_email,contact_phone
+V001,Acme Office Supplies Pvt Ltd,Acme Office Supplies|Acme Supplies,29AABCA1234F1Z5,29,Bengaluru,approved,,HDFC Bank,50100234567812,HDFC0001234,30,billing@acmeoffice.in,+91 80 4123 5500
+V002,Bluestar IT Services LLP,Bluestar IT|Bluestar IT Services,27AAKFB5678L1ZS,27,Pune,approved,,ICICI Bank,002105012345,ICIC0000021,45,accounts@bluestarit.co.in,+91 20 6610 2200
+V003,Greenleaf Facility Management Pvt Ltd,Greenleaf Facility Mgmt|Greenleaf FM|Greenleaf Facility Management,29AADCG9012M1ZA,29,Bengaluru,approved,,State Bank of India,39876543210,SBIN0040123,30,finance@greenleaffm.in,+91 80 2556 7788
+V004,Swift Logistics Pvt Ltd,Swift Logistics|Swift Logistic,33AAECS3456N1Z2,33,Chennai,approved,,Axis Bank,917020012345678,UTIB0000456,15,ar@swiftlogistics.in,+91 44 4900 3100
+V005,Orion Packaging Industries,Orion Packaging,24AAFFO7890P1ZG,24,Ahmedabad,blocked,GST registration cancelled - vendor under re-verification,Bank of Baroda,27150200001234,BARB0NAROLX,30,sales@orionpack.in,+91 79 2589 4400

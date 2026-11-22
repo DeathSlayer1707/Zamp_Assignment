@@ -1,0 +1,56 @@
+[
+  {
+    "file": "01_acme_happy_path.pdf",
+    "title": "Acme Office Supplies - clean invoice",
+    "scenario": "Happy path: clean PDF, explicit PO, quantities and prices match PO and goods receipt.",
+    "expect": "approved"
+  },
+  {
+    "file": "02_greenleaf_scanned_no_po.pdf",
+    "title": "Greenleaf FM - scanned, no PO number",
+    "scenario": "Edge case: image-only scan (needs OCR) and no PO reference. The process must infer the PO from vendor, lines and amount.",
+    "expect": "needs_review"
+  },
+  {
+    "file": "03_bluestar_split_invoice_2.pdf",
+    "title": "Bluestar IT - 2nd partial invoice on PO-4503",
+    "scenario": "Edge case: vendor splits one PO across invoices. Invoice 1 (12 units) is already paid; this is invoice 2 (12 more). Cumulative 24 of 30 received.",
+    "expect": "approved"
+  },
+  {
+    "file": "04_bluestar_split_invoice_3_overbill.pdf",
+    "title": "Bluestar IT - 3rd invoice that over-bills PO-4503",
+    "scenario": "Edge case: 3rd partial invoice for 10 units. After invoices 1+2 (24 units), this takes the PO to 34 of 30 ordered/received.",
+    "expect": "needs_review"
+  },
+  {
+    "file": "05_swift_resubmitted_duplicate.pdf",
+    "title": "Swift Logistics - re-sent October invoice",
+    "scenario": "Edge case: invoice SL-7781 was paid last month. Vendor re-sends it as 'SL/7781' with a new layout, so the file hash and the literal number both differ.",
+    "expect": "rejected"
+  },
+  {
+    "file": "06_swift_bank_details_changed.pdf",
+    "title": "Swift Logistics - new bank account on invoice",
+    "scenario": "Edge case: everything matches the PO, but the remit-to bank account differs from the vendor master. Classic invoice-redirection fraud pattern.",
+    "expect": "needs_review"
+  },
+  {
+    "file": "07_acme_price_variance.pdf",
+    "title": "Acme Office Supplies - toner price above PO",
+    "scenario": "Extra: toner billed at \u20b95,760 against PO price \u20b95,600 (+2.9%), outside the 1% tolerance.",
+    "expect": "needs_review"
+  },
+  {
+    "file": "08_orion_blocked_vendor.pdf",
+    "title": "Orion Packaging - blocked vendor",
+    "scenario": "Extra: valid-looking invoice and PO, but the vendor is blocked in the vendor master.",
+    "expect": "rejected"
+  },
+  {
+    "file": "09_acme_missing_number_and_date.pdf",
+    "title": "Acme Office Supplies - no invoice number or date",
+    "scenario": "Extra: invoice is missing its number and date. Not a valid GST tax invoice, so it must be re-issued.",
+    "expect": "rejected"
+  }
+]

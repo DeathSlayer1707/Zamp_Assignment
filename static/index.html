@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoice desk - Northwind AP</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2715%27 fill=%27%2312355B%27/%3E%3Cpath d=%27M10 16l4 4 8-9%27 stroke=%27white%27 stroke-width=%273%27 fill=%27none%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="nav">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <strong>Invoice desk</strong>
+        <small>Northwind Retail AP</small>
+      </div>
+    </div>
+    <nav>
+      <a href="#/process" data-nav="process">Process invoice</a>
+      <a href="#/runs" data-nav="runs">Dashboard</a>
+      <a href="#/review" data-nav="review">Review queue <span class="badge" id="review-badge" hidden></span></a>
+      <a href="#/reference" data-nav="reference">POs and vendors</a>
+      <a href="#/how" data-nav="how">How it decides</a>
+    </nav>
+    <div class="nav-foot" id="llm-status"></div>
+  </aside>
+  <main id="view" tabindex="-1"></main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

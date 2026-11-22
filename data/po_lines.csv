@@ -1,0 +1,16 @@
+po_number,line_no,item_code,description,uom,qty_ordered,unit_price,tax_rate,qty_received
+PO-4501,1,STN-A4-75,A4 copier paper 75gsm (box of 5 reams),box,40,1450.00,18,40
+PO-4501,2,FUR-CHR-M2,Ergonomic mesh office chair,unit,6,8900.00,18,6
+PO-4501,3,STN-WBM-10,Whiteboard markers (pack of 10),pack,25,420.00,18,25
+PO-4502,1,CON-TNR-26A,Laser printer toner cartridge HP 26A,unit,20,5600.00,18,20
+PO-4502,2,STN-STP-HD,Heavy duty stapler,unit,15,650.00,18,15
+PO-4503,1,NET-SW24-CBS,Managed 24-port network switch Cisco CBS350,unit,30,18000.00,18,30
+PO-4503,2,SRV-SW-INST,Switch installation and configuration,unit,30,1500.00,18,30
+PO-4504,1,FM-HK-NOV,Housekeeping services - November 2026,month,1,84000.00,18,1
+PO-4504,2,FM-PEST-Q,Pest control treatment (quarterly),visit,1,12500.00,18,1
+PO-4505,1,FM-LAND-Q4,Garden and landscaping maintenance,month,3,15000.00,18,2
+PO-4506,1,LOG-FTL-MAA,Line-haul freight Bengaluru-Chennai full truck load,trip,8,21000.00,12,8
+PO-4506,2,LOG-LU,Loading and unloading charges,trip,8,1800.00,12,8
+PO-4507,1,LOG-FTL-HYD,Line-haul freight Bengaluru-Hyderabad full truck load,trip,5,19500.00,12,5
+PO-4508,1,PKG-CB-5PLY,Corrugated shipper box 5-ply,unit,500,38.00,18,500
+PO-4509,1,PAN-TEA-COF,Pantry supplies - tea coffee and snacks,lot,1,18500.00,18,1
